@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import { useAsyncValue } from 'react-router-dom';
+import usePageTitle from '../../../hooks/usePageTitle.js';
 import CountryInfoCard from '../../../components/ui/CountryInfoCard.jsx';
 import Image from '../../../components/ui/Image.jsx';
 import BorderCountries from '../../../components/ui/BorderCountries.jsx';
@@ -9,10 +9,8 @@ import BorderCountries from '../../../components/ui/BorderCountries.jsx';
  */
 export default function CountryDetails() {
   const country = useAsyncValue();
+  usePageTitle(`Where in the world | ${country.name}`);
 
-  useEffect(() => {
-    document.title = `Where in the world | ${country.name}`;
-  }, [country.name]);
   return (
     <>
       <div className='country-info__flag'>
