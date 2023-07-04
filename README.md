@@ -40,11 +40,13 @@ Users should be able to:
 #### Medium Size Devices
 
 ![](resources/screenshots/tablet.png)
+![](resources/screenshots/tablet-country.png)
 
 #### Large
 
 ![](resources/screenshots/desktop.png)
 ![](resources/screenshots/desktop-active.png)
+![](resources/screenshots/desktop-country.png)
 
 </div>
 
