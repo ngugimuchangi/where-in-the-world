@@ -11,7 +11,7 @@ import formatCountryData from '../../utils/formatCountryData';
 import fields from '../../data/fields.js';
 
 /**
- * Home route data loader
+ * Home route data loader. Fetches data for all countries
  * @returns {Promise} - country data promise
  */
 export async function loader({ request }) {
@@ -26,9 +26,7 @@ export async function loader({ request }) {
   return defer({ countries });
 }
 
-/**
- * Home page
- */
+// Home page
 export default function Home() {
   const { countries } = useLoaderData();
   usePageTitle('Where in the world');

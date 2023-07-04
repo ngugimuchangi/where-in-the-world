@@ -7,8 +7,12 @@ import formatCountryData from '../../utils/formatCountryData';
 import CountryInfoSkeleton from '../../components/ui/CountryInfoSkeleton.jsx';
 import NoCountriesFound from '../../components/ui/NoCountriesFound.jsx';
 import fields from '../../data/fields.js';
+
 /**
  * Country page loader. Fetches data for specific country
+ * including its flag, native name, population, region,
+ * subregion, capital, top level domain, currencies,
+ * languages and bordering countries
  * @param {object} - route info
  * @returns {Promise} promise that resolves with country data
  */
@@ -31,12 +35,7 @@ export async function loader({ params }) {
   return defer({ country: data });
 }
 
-/**
- * Country page - Contains information about a country
- * including its flag, native name, population, region,
- * subregion, capital, top level domain, currencies,
- * languages and bordering countries
- */
+// Country page
 export default function Country() {
   const { country } = useLoaderData();
 

@@ -2,10 +2,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Image from './Image.jsx';
 import Info from './Info.jsx';
-
-/**
- * Country card element
- */
 export default function CountryCard({ country }) {
   const {
     name, population, region, capital, flags, alpha,

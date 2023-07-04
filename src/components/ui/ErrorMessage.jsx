@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 import Image from './Image.jsx';
 import ErrorImage from '../../assets/images/404.svg';
 
-/**
- * Handles errors from calls to route loaders
- */
+// Handles errors from calls to route loaders
 export default function ErrorMessage({ message, errorHeader, imgSrc = ErrorImage }) {
   return (
     <div className='error-wrapper text-body'>

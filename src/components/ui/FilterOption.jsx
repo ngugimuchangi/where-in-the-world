@@ -1,15 +1,10 @@
 import { useContext } from 'react';
 import { SearchUpdateContext } from '../../contexts/searchContext.jsx';
 
-/**
- * Filter option
- */
 function FilterOption({ continent, setFilterActive, setFilter }) {
   const setSearchParams = useContext(SearchUpdateContext);
-  /**
-   * Sets current filters and
-   * closes filter options
-   */
+  
+  // Sets current filters and closes filter options
   function changeRegion() {
     setFilter(continent);
     setFilterActive(false);

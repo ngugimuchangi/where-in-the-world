@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 
-/** Image component */
 export default function Image({ src, alt }) {
   const ref = useRef();
   return (

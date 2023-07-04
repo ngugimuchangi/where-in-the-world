@@ -4,9 +4,7 @@ import CountryInfoCard from '../../../components/ui/CountryInfoCard.jsx';
 import Image from '../../../components/ui/Image.jsx';
 import BorderCountries from '../../../components/ui/BorderCountries.jsx';
 
-/**
- * Compilation of all country details for a page
- */
+// All countries that meet current search criteria
 export default function CountryDetails() {
   const country = useAsyncValue();
   usePageTitle(`Where in the world | ${country.name}`);

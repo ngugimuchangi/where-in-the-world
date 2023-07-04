@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import Info from './Info.jsx';
 
-/**
- */
 export default function CountryInfoCard({ country }) {
   return (
     <div className='country-info__text text-body'>

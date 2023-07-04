@@ -1,6 +1,11 @@
 import { useContext, useMemo, useDeferredValue } from 'react';
 import { SearchContext } from '../contexts/searchContext.jsx';
 
+/**
+ * Filters countries based on user input and region
+ * @param {Object[]} countriesData 
+ * @returns {Object[]} - list of countries that match user input and region
+ */
 export default function useCountries(countriesData) {
   const searchParams = useContext(SearchContext);
   const deferredSearchParams = useDeferredValue(searchParams);

@@ -1,6 +1,4 @@
-/**
- * Country details fields
- */
+// Country details fields
 function Info({ infoTitle, children }) {
   return (
     <pre className='info'>

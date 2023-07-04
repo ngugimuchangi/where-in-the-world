@@ -1,7 +1,3 @@
-/**
- * Skeleton for country card
- * @returns
- */
 export default function CountryCardSkeleton() {
   return (
     <div className='col card-skeleton'>

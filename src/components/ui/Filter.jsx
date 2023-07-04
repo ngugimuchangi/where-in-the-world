@@ -3,18 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import FilterOption from './FilterOption.jsx';
 
-/**
- * Filter list component
- */
 function Filter() {
   const continents = ['All', 'Africa', 'America', 'Asia', 'Europe', 'Oceania'];
   const defaultText = 'Filter by Region';
   const [filter, setFilter] = useState(defaultText);
   const [filterActive, setFilterActive] = useState(false);
 
-  /**
-   * Toggles filter options visibility
-   */
+  // Toggles filter options visibility
   function toggleFilters() {
     setFilterActive((isActive) => !isActive);
   }
