@@ -1,19 +1,20 @@
 @use 'variables' as *;
+
 // Header
 .header {
+  width: 100vw;
   background: var(--clr-card-surface);
   box-shadow: $box-shadow;
 }
 
 // Main
 .main {
-  padding-block-end: $base-padding * 2;
+  padding-bottom: $base-padding * 2;
 }
 
 // Search
 .search {
   padding-block: $base-padding * 4;
-  margin-bottom: $base-margin * 2;
   gap: 1rem;
 }
 
