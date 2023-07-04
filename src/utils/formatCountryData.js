@@ -3,6 +3,7 @@
  * @param {object} country - raw country data from fetch request
  * @returns {object} - formatted country data
  */
+
 export default function formatCountryData(country) {
   const name = country.name.common;
   const nativeName = country.name.nativeName
